@@ -10,3 +10,6 @@ def checkwin(board):
         if board[combo[0]] == board[combo[1]] == board[combo[2]] != " ":
             return board[combo[0]]
     return None
+
+def is_board_full(board):
+    return " " not in board
