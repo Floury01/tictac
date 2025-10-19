@@ -61,5 +61,9 @@ def play_game():
         current_player = "O" if current_player == "X" else "X"
 
 if __name__ == "__main__":
-    play_game()
-    
+    while True:
+        play_game()
+        print('Хотите продолжить игру?')
+        print('1-да | 2-нет')
+        if int(input()) == 2:
+            break
